@@ -1,4 +1,12 @@
+
+
+
+
 # skywalking-demo
+
+// 指定agent.config路径
+
+-Dskywalking_config=/path/to/agent.config
 
 // agent配置
 
