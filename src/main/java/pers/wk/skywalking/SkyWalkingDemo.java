@@ -11,7 +11,6 @@ import org.apache.skywalking.apm.agent.core.logging.api.ILog;
 import org.apache.skywalking.apm.agent.core.logging.api.LogManager;
 import org.apache.skywalking.apm.network.trace.component.ComponentsDefine;
 
-import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.CompletableFuture;
@@ -26,9 +25,6 @@ public class SkyWalkingDemo {
     private static AtomicLong counter = new AtomicLong();
 
     public static void main(String[] args) throws InterruptedException {
-        URL resource = Thread.currentThread().getContextClassLoader().getResource("config/agent.config");
-        System.setProperty("skywalking_config", resource.getPath());
-
         try {
             SnifferConfigInitializer.initialize(null);
             ServiceManager.INSTANCE.boot();
