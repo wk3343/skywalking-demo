@@ -16,6 +16,8 @@
 
 -DSW_AGENT_THROTTLING_RATE=10000
 
+-DDEMO_TRACE_ID_LOG_DIR=/path/to/invalidTraceIds.log
+
 
 // demo配置
 
